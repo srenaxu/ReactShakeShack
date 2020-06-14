@@ -1,5 +1,10 @@
 @import "../_constants.sass"
 
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
 #popup-loading
     display: none
     position: fixed
@@ -36,3 +41,9 @@
             position: relative
             left: calc(50% - 14px)
             width: 28px
+            animation-name: spin
+            animation-duration: 2s
+            animation-direction: normal
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+
